@@ -67,7 +67,7 @@ class TagController {
                     id: tag.id,
                     name: tag.name,
                     slug: tag.slug,
-                    image: tag.image ? `http://localhost:3333/uploads/${tag.image}` : '',
+                    image: tag.image ? `http://18.228.11.123:3333/uploads/${tag.image}` : '',
                     description: tag.description,
                     quant_questions: tag.quant_questions
                 }
