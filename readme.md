@@ -8,13 +8,13 @@ Esta API é utilizada para criação e/ou busca de perguntas, respostas, tags e 
 Esse endpoint é responsável pela criação de um novo usuário no banco de dados.
 
 #### Parâmetros
-name: Nome do usuário que está se cadastrando.
+**name**: Nome do usuário que está se cadastrando.
 
-email: E-mail do usuário que está se cadastrando.
+**email**: E-mail do usuário que está se cadastrando.
 
-password: Senha do usuário para acessar o sistema.
+**password**: Senha do usuário para acessar o sistema.
 
-confirmPassword: Confirmação de senha do usuário.
+**confirmPassword**: Confirmação de senha do usuário.
 
 #### Respostas
 ##### Requisição inválida! 400
@@ -54,15 +54,17 @@ Exemplo de resposta:
 Esse endpoint é responsável por listar todas as perguntas registradas no banco de dados (quando passado apenas com "/login"). Ou com query params para filtrar por resultados específicos.
 
 #### Parâmetros
-search: Busca por texto no título ou descrição da pergunta.
-classification: Forma de ordenação das perguntas na exibição. São quatro possibilidades:
-    * creation_date: Data da criação da pergunta (padrão)
-    * quant_answers: Quantidade de respostas da pergunta.
-    * quant-likes: Quantidade de curtidas da pergunta.
-    * name: Nome do título da pergunta.
-order: Tipo de ordenação das perguntas na exibição. São duas possibilidades:
-    * desc: Ordem descrescente (padrão)
-    * asc: Ordem crescente
+**search**: Busca por texto no título ou descrição da pergunta.
+
+**classification**: Forma de ordenação das perguntas na exibição. São quatro possibilidades:
+* **creation_date**: Data da criação da pergunta (padrão)
+* **quant_answers**: Quantidade de respostas da pergunta.
+* **quant-likes**: Quantidade de curtidas da pergunta.
+* **name**: Nome do título da pergunta.
+
+**order**: Tipo de ordenação das perguntas na exibição. São duas possibilidades:
+* **desc**: Ordem descrescente (padrão)
+* **asc**: Ordem crescente
 
 #### Respostas
 ##### OK! 400
